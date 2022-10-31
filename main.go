@@ -14,6 +14,7 @@ import (
 func main() {
 	srcDirPtr := flag.String("input", "public", "source directory")
 	targetDirPtr := flag.String("output", "public-filtered", "target directory")
+	flag.Parse()
 
 	srcDir := *srcDirPtr
 	targetDir := *targetDirPtr
